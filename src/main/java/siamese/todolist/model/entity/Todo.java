@@ -1,16 +1,11 @@
-package siamese.todolist.entity;
-import lombok.Setter;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+package siamese.todolist.model.entity;
+import lombok.Data;
 
 import javax.persistence.*;
 
 @Entity
 @Table
-@ToString
-@Getter @Setter
-@NoArgsConstructor
+@Data //@Getter @Setter @ToString @EqualsAndHashCode @RequiredArgsConstructor
 public class Todo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,4 +16,10 @@ public class Todo {
 
     @Column
     Integer status;
+
+    @Column
+    String createTime;
+
+    @Column
+    String updateTime;
 }

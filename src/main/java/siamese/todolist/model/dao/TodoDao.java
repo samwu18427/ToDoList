@@ -1,7 +1,7 @@
-package siamese.todolist.dao;
+package siamese.todolist.model.dao;
 
 import org.springframework.data.repository.CrudRepository;
-import siamese.todolist.entity.Todo;
+import siamese.todolist.model.entity.Todo;
 
 public interface TodoDao extends CrudRepository<Todo, Integer> {
 

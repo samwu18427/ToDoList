@@ -1,5 +1,7 @@
 package siamese.todolist.entity;
 import org.junit.jupiter.api.Test;
+import siamese.todolist.model.entity.Todo;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ToDoEntityTest {
